@@ -4,7 +4,6 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"> 
 </script> 
 <script> 
- <!-- jQuery code to show the working of event.timeStamp property -->
 $(document).ready(function() { 
  $("p").click(function(event) { 
   $("span").text(event.timeStamp); 
@@ -20,10 +19,8 @@ p {
   } 
   </style> 
   </head> 
-  <body> 
-
-    <!-- click on this paragraph -->
-    <p>The click event occurred <span style="color:green">unknown</span> 
+  <body>
+  <p>The click event occurred <span style="color:green">unknown</span> 
     milliseconds after January 1, 1970.</p> 
 </body> 
 </html> 

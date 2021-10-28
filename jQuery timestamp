@@ -1,0 +1,29 @@
+<!Doctype>
+<html> 
+<head> 
+<script src="https://code.jquery.com/jquery-1.10.2.js"> 
+</script> 
+<script> 
+ <!-- jQuery code to show the working of event.timeStamp property -->
+$(document).ready(function() { 
+ $("p").click(function(event) { 
+  $("span").text(event.timeStamp); 
+ }); 
+ }); 
+</script> 
+<style> 
+p { 
+    width: 80%;
+    padding: 20px; 
+    display: block; 
+    border: 2px solid green; 
+  } 
+  </style> 
+  </head> 
+  <body> 
+
+    <!-- click on this paragraph -->
+    <p>The click event occurred <span style="color:green">unknown</span> 
+    milliseconds after January 1, 1970.</p> 
+</body> 
+</html> 

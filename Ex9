@@ -1,0 +1,14 @@
+<html>
+<body>
+<?php
+$myfile = fopen("newfile.txt", "w") 
+or die("Unable to open file!");
+$txt = "John Doe\r\n";
+fwrite($myfile, $txt);
+$txt1 = "successfully created\n";
+fwrite($myfile, $txt1);
+fclose($myfile);
+echo"file created";
+?>
+</html>
+</body>

@@ -1,0 +1,41 @@
+<html>
+<body>
+<?php
+$name=$email=$gender=$comment="";
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+$name=test($_POST["name"]);
+$email=test($_POST["email"]);
+$gender=test($_POST["gender"]);
+$comment=test($_POST["comment"]);
+}
+function test($data){
+$data=trim($data);
+$data=stripslashes($data);
+$data=htmlspecialchars($data);
+return $data;
+}
+?>
+<h2>PHP Form Validation Example</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+Name: <input type="text" name="name"><br>
+Email:<input type="text" name="email"><br>
+Gender: <input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Male"> Male <br>
+Comment: <textarea name="comment" rows="5" cols="30"></textarea><br>
+<input type="submit" value="submit"><br>
+</form>
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $gender;
+
+echo "<br>";
+echo $comment;
+
+
+?>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<form action="ex8.php" method="POST">
+Enter the first number:<br><input type="text" name="num Enter the second number:<br><input type="text" name="nu
+1.ADD<br><br>
+2.SUB<br><br>
+3.MUL<br><br>
+4.DIV<br><br> 
+Enter your choice: <br><input type="text" name="choice">
+<button>submit</button>
+</form>
+</body>
+</html>
+<?php
+function sample(){
+$a=$_POST['num1']; 
+$b=$_POST['num2'];
+$c=$_POST['choice'];
+switch (Sc){
+case 1:
+Sd=$a+$b;
+echo "The addition of two numbers: ".$d;
+break;
+case 2:
+Sd=$a-$b;
+echo "The subtration of two numbers: "$d;
+break;
+case 3:
+Sd=$a⭑$b;
+echo "The multiplication of two numbers: ".$d;
+break;
+case 4:
+Sd=$a/$b;
+echo "The division of two numbers: ".$d;
+break;
+default:
+echo "Please check the input values or the choice value":
+break;
+}
+}
+sample();
+?>
